@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- partial("_headAssets", {title: "Welccome to Vidyanjali - for Boys and Girls"}) %>
+</head>
+<body>
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- header section -->
+<%- partial("_header") %>
+<!-- Header section end -->
+
+<!-- Header section  -->
+<nav class="nav-section">
+    <div class="container">
+        <div class="nav-right">
+            <a href=""><i class="fa fa-search"></i></a>
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="course.html">COURSES</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- Header section end -->
+
+
+<!-- Breadcrumb section -->
+<div class="site-breadcrumb">
+    <div class="container">
+        <a href="#"><i class="fa fa-home"></i> Home</a> <i class="fa fa-angle-right"></i>
+        <span>Contact</span>
+    </div>
+</div>
+<!-- Breadcrumb section end -->
+
+
+<!-- Courses section -->
+<section class="contact-page spad pt-0">
+    <div class="container">
+        <div class="map-section">
+            <div class="contact-info-warp">
+                <div class="contact-info">
+                    <h4>Address</h4>
+                    <p>7-1-46/A Dharamkaram Road Ameerpet <br/>Hyderabad-500016</p>
+                </div>
+                <div class="contact-info">
+                    <h4>Phone</h4>
+                    <p>+91 40 65165536</p>
+                </div>
+                <div class="contact-info">
+                    <h4>Email</h4>
+                    <p>vidhyanjali@live.com</p>
+                </div>
+                <div class="contact-info">
+                    <h4>Working time</h4>
+                    <p>Monday - Friday: 08 AM - 04 PM</p>
+                </div>
+            </div>
+            <!-- Google map -->
+            <div class="map" id="map-canvas"></div>
+        </div>
+        <div class="contact-form spad pb-0">
+            <div class="section-title text-center">
+                <h3>GET IN TOUCH</h3>
+                <p>Contact us for different classes</p>
+            </div>
+            <form class="comment-form --contact">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="col-lg-12">
+                        <textarea placeholder="Message"></textarea>
+                        <div class="text-center">
+                            <button class="site-btn">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- Courses section end-->
+
+
+<!-- Newsletter section -->
+<!--<section class="newsletter-section">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-5 col-lg-7">-->
+<!--                <div class="section-title mb-md-0">-->
+<!--                    <h3>NEWSLETTER</h3>-->
+<!--                    <p>Subscribe and get the latest news and useful tips, advice and best offer.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-7 col-lg-5">-->
+<!--                <form class="newsletter">-->
+<!--                    <input type="text" placeholder="Enter your email">-->
+<!--                    <button class="site-btn">SUBSCRIBE</button>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!-- Newsletter section end -->
+
+
+<!-- Footer section -->
+<%- partial("_footer") %>
+<!-- Footer section end-->
+
+<%- partial("_footerAssets") %>
+
+<!-- load for map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
+<script src="js/map.js"></script>
+
+</body>
+</html>
